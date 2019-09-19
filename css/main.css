@@ -1,0 +1,27 @@
+html {
+   /* background: цвет*/
+    /*шрифт*/
+   font-family: 'Indie Flower', cursive;
+    /*базовый размер шрифта*/
+    font-size: 16px;
+    /*базовая высота строчки*/
+    line-height: 1.5;
+}
+ textarea {
+    background: #FFE4E1; /* Цвет фона */
+    border: 10px solid #40E0D0; /* Параметры рамки */
+    padding: 6px; /* Поля */
+    width: 50%; /* Ширина */
+    height: 200px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 14px; /* Размер шрифта */
+   }
+
+<!-- ........................
+                Медиа
+
+             ........................ -->
+
+
+
+
