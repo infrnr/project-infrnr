@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Сайт портфолио</title>
+    <!-- Нормализация стилей (сбросил отступы) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Собственный стиль -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Подключение web шрихтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <style>
+      ol {
+        list-style-type: none;
+        /* Убираем исходные маркеры */
+        counter-reset: item;
+        /* Обнуляем счетчик списка */
+      }
+      
+      li::before {
+        content: counter(item) ') ';
+        /* Добавляем к числам скобку */
+        counter-increment: item;
+        /* Задаём имя счетчика */
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <!--1-->
+      <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+      <!--2-->
+      <li><a href="https://example.com/">Абсолютная на главную сайта example.com в протоколе https</a></li>
+      <!--3-->
+      <li><a href="ftp://ftp.redcom.ru/pub/">Ссылк на файл на сервере FTP без авторизации</a></li>
+      <!--4-->
+      <li><a href="ftp://user:pass@redcom.ru/pub/clock.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      <!--5-->
+      <li>
+        <a id="1"></a> <a href="https://example.com/#1">Ссылка на фрагмент страницы некоторого сайта</a></li>
+      <!--6-->
+      <li>
+        <a id="2"></a> <a href="#2">Ссылка на фрагмент текущей страницы</a></li>
+      <!--7-->
+      <li><a href="https://example.com/index.html?p=text&i=0">Ссылка с двумя параметрами в URL</a></li>
+      <!--8-->
+        <li>Список ссылок основной навигации сайта с подписями title
+      <ul >
+          <li><a href="https://example.com/" title="Что?">Что?</a></li>
+          <li><a href="https://example.com/" title="Где?">Гдe?</a></li>
+          <li><a href="https://example.com/" title="Когда?">Когда?</a></li>
+          </ul>
+        
+        </li>
+      <!--9-->
+      <li><a id="https://example.com/">Ссылка без href</a></li>
+      <!--10-->
+      <li><a href="javascript:void(0)">Ссылка с пустым href</a></li>
+      <!--11-->
+      <li><a href="https://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <!--12-->
+      <li>
+        <a href="http://example.com/">
+            <noindex>Запрещенная для индексации поисковиками</noindex>
+          </a>
+      </li>
+      <!--13-->
+      <li>Контекстной считается ссылка, размещенная в фрагменте текстового контента, в который она вписывается по смыслу. То есть имеет адекватный <a href="https://example.com/"
+        title="и ещё">анкор</a>, который выглядит естественным при чтении текста. Если ссылка безанкорная, то ее употребление объясняется околоссылочным текстом.
+        Чаще всего это отзыв либо рекомендация.</li>
+      <!--14-->
+      <li><a>Ссылка-изображения</a>
+        <p>
+          <a href="https://example.com/"><img src="img/bg/ppp.jpg" width="200" height="200" alt="Пример1" title="Ониме"></a>
+        </p>
+      </li>
+      <!--15-->
+      <li>Cсылки из прямоугольных и круглых областей картинки (HTML-тег map
+        <p> <img src="img/bg/kr.png" usemap="#krug" alt="Пример2" title="Небо" width="150" height="150">
+          <map name="krug">
+            <area shape="circle" coords="75,75,75" href="http://example.com/" alt="Пример2"> </map> 
+            <img src="img/bg/kosmos.jfif" usemap="#prama" alt="Пример3" title="Космос" width="200" height="100">
+          <map name="prama">
+            <area shape="rect" coords="0,100,0,100" href="http://example.com/" lt="Пример3"> </map>
+        </p>
+      </li>
+      <!--16-->
+      <li><a href="/about.html">Относительная на страницу в текущем каталоге</a></li>
+      <!--17-->
+      <li><a href="/about/contact.hnml">Относительная на страницу в каталоге about</a></li>
+      <!--18-->
+      <li><a href="../about.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <!--19-->
+      <li><a href="../../about.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <!--20-->
+      <li><a href="/">Сокращенная на главную</a></li>
+      <!--21-->
+      <li><a href="/help.html">Сокращенная ссылка на внутреннюю</a></li>
+    </ol>
+    <!-- ........................
+                Форма
+
+             ........................ -->
+    
+    <h2>Forma</h2>
+    <form action="URL_отправки_данных" method="GET">
+        
+      <!--1-->Имя:
+        <br>
+      <p>
+        <input type="text" name="userName" placeholder="Enter a name" size="25"> </p>
+      <!--2-->E-mail :
+      <br>
+      <p>
+        <input type="text" name="userName" placeholder="Enter your email address" size="25"> </p>
+      <!--3-->Дата рождения :
+      <br>
+      <p>
+        <input name="field-date" value="2019-08-13" type="date" size="25"> </p>
+      <!--4-->Пол:
+      <br>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение1">Ж</label>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-2" value="Значение2">М</label>
+        <br>
+      <!--5-->Количество конечностей:
+      <br>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение1">2</label>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение2">3</label>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение3">4</label>
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение4">5</label><br>
+      <!--6-->Сверхспособности:
+      <br>
+      <p>
+        <select name="field-name-3">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </p>
+      <!--7-->Биография:
+      <br>
+      <p>
+        <textarea name="comment" cols="50"></textarea>
+      </p>
+      <!--8-->
+      <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+      <label for="subscribeNews">С контрактом ознакомлен</label>
+      <!--9-->
+      <br>
+      <input type="submit" value="Отправить"> 
+      </form>
+  </body>
+
+</html>
