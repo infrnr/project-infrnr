@@ -153,11 +153,11 @@ function sendAjaxForm(ajax_form,url) {
         type:     "POST", 
         dataType: "html", 
         data: j("#"+ajax_form).serialize(),  
-        success: function(response) { //Данные отправлены успешн
+        success: function(response) { 
         	localStorage.clear();
         	var timeoutID = window.setTimeout(window.alert, 1000, 'Отправленно');
     	},
-    	error: function(response) { // Данные не отправлены
+    	error: function(response) { 
             var timeoutID = window.setTimeout(window.alert, 1000, 'Ошибка!');
     	}
  	});
