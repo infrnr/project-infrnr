@@ -1,6 +1,21 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+.aras {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+}
+.aras .forma {
+	top: 0px;
+	left: -125px;
+}
+.aras .forme{
+	top: 0px;
+	left: -125px;
+}
+
 .UpAndDown iframe {
 	width: 100%;
 	height:600px;
@@ -374,4 +389,5 @@ footer {
 	display: flex;
 	justify-content: center;
 }
+
 }
