@@ -103,13 +103,13 @@ j(document).ready(function(){
 	});
 	j("#Avalon").click(
 		function(){
-			sendAjaxForm('putYourHand','https://api.slapform.com/Login-Alex200@yandex.ru');
+			sendAjaxForm('putYourHand','https://api.slapform.com/Login-samets17042000@mail.ru');
 			return false; 
 		}
 	);
 	j("#Avalone").click(
 		function(){
-			sendAjaxForm('putYourHand','https://api.slapform.com/Login-Alex200@yandex.ru');
+			sendAjaxForm('putYourHand','https://api.slapform.com/Login-samets17042000@mail.ru');
 			return false; 
 		}
 	);
